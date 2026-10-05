@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tejas Raval - Backend Developer Resume">
+    <title>Tejas Raval - Resume</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            line-height: 1.35;
+        }
+
+        .resume {
+            width: 8.5in;
+            min-height: 11in;
+            margin: 0 auto;
+            padding: 0.5in;
+        }
+
+        /* ---------- Header ---------- */
+
+        .header {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .contact {
+            margin-top: 4px;
+            font-size: 11px;
+        }
+
+        .contact a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .separator {
+            margin: 0 6px;
+        }
+
+        /* ---------- Sections ---------- */
+
+        .section {
+            margin-top: 10px;
+        }
+
+        .section-title {
+            margin: 0 0 7px 0;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #000;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
+        }
+
+        /* ---------- Summary ---------- */
+
+        .summary {
+            font-size: 11px;
+            text-align: justify;
+            margin: 0;
+        }
+
+        /* ---------- Entries ---------- */
+
+        .entry {
+            margin-bottom: 8px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 15px;
+        }
+
+        .entry-title {
+            font-weight: 700;
+        }
+
+        .entry-date {
+            white-space: nowrap;
+            text-align: right;
+        }
+
+        .entry-subheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 15px;
+            font-size: 10.5px;
+            font-style: italic;
+        }
+
+        .entry-subheader .location {
+            white-space: nowrap;
+            text-align: right;
+        }
+
+        /* ---------- Education ---------- */
+
+        .education-details {
+            font-size: 10.5px;
+        }
+
+        /* ---------- Lists ---------- */
+
+        ul {
+            margin-top: 3px;
+            margin-bottom: 7px;
+        }
+
+        .bullet-list {
+            padding-left: 18px;
+        }
+
+        .bullet-list li {
+            margin-bottom: 2px;
+            font-size: 10.5px;
+        }
+
+        .achievement-list {
+            padding-left: 18px;
+            margin-top: 3px;
+        }
+
+        .achievement-list li {
+            margin-bottom: 2px;
+            font-size: 10.5px;
+        }
+
+        /* ---------- Projects ---------- */
+
+        .project {
+            margin-bottom: 8px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 15px;
+        }
+
+        .project-name {
+            font-size: 10.5px;
+        }
+
+        .project-name strong {
+            font-weight: 700;
+        }
+
+        .project-tech {
+            font-style: italic;
+        }
+
+        .project-date {
+            white-space: nowrap;
+            font-size: 10.5px;
+        }
+
+        /* ---------- Skills ---------- */
+
+        .skills {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills li {
+            font-size: 10.5px;
+            margin-bottom: 3px;
+        }
+
+        .skills strong {
+            font-weight: 700;
+        }
+
+        /* ---------- Coursework ---------- */
+
+        .coursework {
+            font-size: 10.5px;
+            margin: 0;
+        }
+
+        /* ---------- Print ---------- */
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .resume {
+                width: 8.5in;
+                min-height: 11in;
+                margin: 0;
+                padding: 0.5in;
+            }
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+
+            .section {
+                break-inside: avoid;
+            }
+
+            .entry,
+            .project {
+                break-inside: avoid;
+            }
+        }
+
+        /* ---------- Responsive ---------- */
+
+        @media screen and (max-width: 900px) {
+            .resume {
+                width: 100%;
+                min-height: auto;
+                padding: 30px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .resume {
+                padding: 20px;
+            }
+
+            .entry-header,
+            .entry-subheader,
+            .project-header {
+                flex-direction: column;
+                gap: 1px;
+            }
+
+            .entry-date,
+            .entry-subheader .location,
+            .project-date {
+                text-align: left;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+        <h1>Tejas Raval</h1>
+
+        <div class="contact">
+            <span>+91-6353852813</span>
+            <span class="separator">|</span>
+
+            <a href="mailto:2x3osjs@gmail.com">
+                2x3osjs@gmail.com
+            </a>
+
+            <span class="separator">|</span>
+
+            <a href="https://www.linkedin.com/in/tejas-raval-2a5103234/"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <span class="separator">|</span>
+
+            <a href="https://github.com/Tejas2124"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub
+            </a>
+        </div>
+    </header>
+
+
+    <!-- ================= SUMMARY ================= -->
+
+    <section class="section">
+        <h2 class="section-title">Professional Summary</h2>
+
+        <p class="summary">
+            Backend Developer and Computer Science graduate with hands-on experience
+            designing REST APIs, database-driven applications, and scalable software
+            systems. Experienced in FastAPI, Node.js, SQL, MongoDB, API integration,
+            and backend architecture. Strong understanding of Object-Oriented
+            Programming, database design, software engineering principles, testing,
+            and debugging. Passionate about building reliable APIs, implementing
+            business logic, and developing high-performance web services.
+        </p>
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section class="section">
+        <h2 class="section-title">Education</h2>
+
+        <div class="entry">
+
+            <div class="entry-header">
+                <span class="entry-title">
+                    Adani Institute of Infrastructure Engineering
+                </span>
+
+                <span class="entry-date">
+                    Ahmedabad, Gujarat
+                </span>
+            </div>
+
+            <div class="entry-subheader">
+                <span class="education-details">
+                    B.Tech in Computer Science &amp; Engineering (AI/ML)
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong>CGPA: 8.67/10</strong>
+                </span>
+
+                <span class="location">
+                    2021 &ndash; 2025
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="entry">
+
+            <div class="entry-header">
+                <span class="entry-title">
+                    Sahajanand School of Achievers
+                </span>
+
+                <span class="entry-date">
+                    Gandhinagar, Gujarat
+                </span>
+            </div>
+
+            <div class="entry-subheader">
+                <span class="education-details">
+                    Grade XII
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong>77%</strong>
+                </span>
+
+                <span class="location">
+                    2018 &ndash; 2020
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section class="section">
+        <h2 class="section-title">Experience</h2>
+
+
+        <div class="entry">
+
+            <div class="entry-header">
+                <span class="entry-title">
+                    AIML Trainee
+                </span>
+
+                <span class="entry-date">
+                    Jan 2025 &ndash; Jul 2025
+                </span>
+            </div>
+
+            <div class="entry-subheader">
+                <span>Simform Solutions LLP</span>
+                <span class="location">Ahmedabad, Gujarat</span>
+            </div>
+
+            <ul class="bullet-list">
+                <li>
+                    Developed backend services and API-driven applications using
+                    FastAPI and Python for enterprise AI solutions.
+                </li>
+
+                <li>
+                    Designed REST APIs for NL2SQL systems enabling communication
+                    between frontend applications and database layers.
+                </li>
+
+                <li>
+                    Implemented business logic modules, authentication workflows,
+                    and database operations using SQL and NoSQL databases.
+                </li>
+
+                <li>
+                    Participated in testing, debugging, code reviews, and deployment
+                    activities following software engineering best practices.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="entry">
+
+            <div class="entry-header">
+                <span class="entry-title">
+                    Machine Learning Intern
+                </span>
+
+                <span class="entry-date">
+                    Jun 2024
+                </span>
+            </div>
+
+            <div class="entry-subheader">
+                <span>CodSoft</span>
+                <span class="location">Remote</span>
+            </div>
+
+            <ul class="bullet-list">
+                <li>
+                    Developed end-to-end software solutions involving backend
+                    processing, machine learning integration, and API workflows.
+                </li>
+
+                <li>
+                    Performed testing, optimization, and debugging to improve
+                    application reliability and performance.
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="section">
+        <h2 class="section-title">Projects</h2>
+
+
+        <div class="project">
+
+            <div class="project-header">
+                <span class="project-name">
+                    <strong>AI Dictionary</strong>
+                    <span> | </span>
+                    <span class="project-tech">
+                        FastAPI, PostgreSQL, Next.js, TypeScript
+                    </span>
+                </span>
+
+                <span class="project-date">
+                    2025 &ndash; Present
+                </span>
+            </div>
+
+            <ul class="bullet-list">
+                <li>
+                    Designed and developed REST APIs for dictionary content
+                    management and retrieval.
+                </li>
+
+                <li>
+                    Implemented JWT authentication, role-based access control,
+                    and PostgreSQL integration.
+                </li>
+
+                <li>
+                    Built scalable backend architecture following API-first
+                    design principles.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-header">
+                <span class="project-name">
+                    <strong>ViniBot - Medical Assistant Platform</strong>
+                    <span> | </span>
+                    <span class="project-tech">
+                        FastAPI, MongoDB, LangGraph
+                    </span>
+                </span>
+
+                <span class="project-date">
+                    2025
+                </span>
+            </div>
+
+            <ul class="bullet-list">
+                <li>
+                    Developed backend APIs for appointment scheduling, patient
+                    management, and inventory tracking.
+                </li>
+
+                <li>
+                    Designed reusable business logic layers and service modules
+                    for healthcare workflows.
+                </li>
+
+                <li>
+                    Integrated MongoDB for persistent storage and API-driven
+                    data management.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-header">
+                <span class="project-name">
+                    <strong>GenQ - Natural Language to SQL</strong>
+                    <span> | </span>
+                    <span class="project-tech">
+                        FastAPI, MySQL, Streamlit
+                    </span>
+                </span>
+
+                <span class="project-date">
+                    2025
+                </span>
+            </div>
+
+            <ul class="bullet-list">
+                <li>
+                    Built REST APIs to process natural language requests and
+                    execute generated SQL queries.
+                </li>
+
+                <li>
+                    Implemented schema retrieval, query validation, and database
+                    integration layers.
+                </li>
+
+                <li>
+                    Designed modular backend services following OOP principles
+                    and clean architecture practices.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-header">
+                <span class="project-name">
+                    <strong>Reliance SuperMarket Database System</strong>
+                    <span> | </span>
+                    <span class="project-tech">
+                        MySQL
+                    </span>
+                </span>
+
+                <span class="project-date">
+                    2022 &ndash; 2023
+                </span>
+            </div>
+
+            <ul class="bullet-list">
+                <li>
+                    Designed and implemented a normalized relational database
+                    with 10+ tables.
+                </li>
+
+                <li>
+                    Developed CRUD operations, views, triggers, stored procedures,
+                    and optimized SQL queries.
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TECHNICAL SKILLS ================= -->
+
+    <section class="section">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <ul class="skills">
+
+            <li>
+                <strong>Programming Languages:</strong>
+                Python, JavaScript, SQL, C++, Java
+            </li>
+
+            <li>
+                <strong>Backend Development:</strong>
+                FastAPI, Node.js, REST APIs, MVC Architecture,
+                JWT Authentication, WebSocket
+            </li>
+
+            <li>
+                <strong>Databases:</strong>
+                MySQL, PostgreSQL, MongoDB, SQL, NoSQL
+            </li>
+
+            <li>
+                <strong>Software Engineering:</strong>
+                Object-Oriented Programming (OOP), Design Patterns,
+                Data Structures, Algorithms, API Design
+            </li>
+
+            <li>
+                <strong>Frontend:</strong>
+                React.js, Next.js, TailwindCSS, HTML, CSS, JavaScript
+            </li>
+
+            <li>
+                <strong>Tools:</strong>
+                Git, GitHub, Docker, Linux, Postman
+            </li>
+
+            <li>
+                <strong>Additional:</strong>
+                LangChain, LangGraph, GraphQL (Basic), AJAX,
+                Testing, Debugging, Documentation
+            </li>
+
+        </ul>
+    </section>
+
+
+    <!-- ================= COURSEWORK ================= -->
+
+    <section class="section">
+        <h2 class="section-title">Relevant Coursework</h2>
+
+        <p class="coursework">
+            Database Management Systems, Object-Oriented Programming,
+            Data Structures and Algorithms, Software Engineering,
+            Operating Systems, Computer Networks, Web Technologies.
+        </p>
+    </section>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section class="section">
+        <h2 class="section-title">Achievements</h2>
+
+        <ul class="achievement-list">
+
+            <li>
+                Databricks Machine Learning Associate Certification.
+            </li>
+
+            <li>
+                Winner &ndash; IQM Hackathon 2023.
+            </li>
+
+            <li>
+                Runner-Up &ndash; NASA Space Apps Challenge (Gujarat Level) 2023.
+            </li>
+
+            <li>
+                Ranked 12th among 600+ teams in Synapse National Hackathon 2023.
+            </li>
+
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
